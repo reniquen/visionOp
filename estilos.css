@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+h1 {
+    font: bold 20px verdana, sans-serif;
+    text-align: center;
+}
+h2 {
+    font: bold 14px verdana, sans-serif;
+}
+.parrafo {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#page {
+    width: 100%; 
+    height: auto;
+    text-align: left;
+}
+/*Header*/
+.cabecera {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(97, 97, 97);
+}
+#cabecerah1 {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+
+/*Nav*/
+#menu {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+    margin: 10px 0px;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+}
+#logovision{
+    width: 100px; height: 100px;
+    border-radius: 500px;
+    margin-right: 25px;
+}
+#logonombre {
+    display: inline-flex;
+    float: left;
+    margin-left: 15px;
+    margin-right: 30px;
+    font-family: arial, sans-serif;
+    font-family: 'Kaushan Script',cursive;
+    font-weight: 100;
+    font-size: 28px;
+}
+.navm {
+    margin: 0px 10px;
+}
+.navm li{
+    display: inline-flex;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 0px 0px;
+}
+.navm a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.navm a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.navm a:hover::before {
+    width: 100%;
+}
+
+#searchmenu {
+    display: inline-flex;
+    float: right;
+}
+#serchlup {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+}
+#serchbox {
+    width: 120px;
+    height: auto;
+    border-radius: 10px
+}
+/*Page Home - Div Promo*/
+#promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+#imagen3fami {
+    display: inline-flex;
+    width: 1000px;
+    float: left;
+}
+#textopromo{
+    display: inline-flex;
+    float: right;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-style: italic;
+    font: bold 20px verdana, sans-serif;
+    text-align: center;
+}
+/*Home- Aside*/
+.asideh1{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*home / promociones imgs*/
+.promocionesHome {
+    margin-top: 55px;
+}
+.promocionesHome figure {
+    margin: 25px 0px;
+}
+.promocionesHome img {
+    width: 660px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.promocionesHome figure {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .promocionesHome figure:hover {
+    transform: scale(1.2);
+  }
+
+#barra {
+    height: 7px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    border: transparent;
+    margin: 50px 0px 55px 0px;
+}
+
+/*Fundadora*/
+.containerFundadora {
+    width: 660px;
+}
+
+.encabezado_box {
+    background-image: linear-gradient(to right top, #4facfe 0%, #00f2fe 50%, white 100%);
+    border: transparent;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0 0 13px rgb(184, 184, 184);
+    height: 200px;
+    display: flex;
+}
+.imagensoredit {
+    width: 260px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagensoredit img{
+    height: 160px;
+    width: auto;
+    border-radius: 100px;
+    border: 5px solid white;
+}
+.title_edith {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial, sans-serif;
+    font-family: 'Kaushan Script',cursive;
+    font-weight: lighter;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.biografia {
+    width: 615px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding: 25px;
+    margin: 20px 0px;
+    border: transparent;
+    border-radius: 0px 20px 0px 20px;
+}
+.biografia p {
+    color: rgb(81, 81, 81);
+    text-align: justify;
+}
+/*Page - Reserva de horas*/
+
+
+.box_section {
+    width: 660px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.h2Title_section h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Poppins', Arial;
+    text-shadow: 2px 5px 4px #a18cd1, -2px -2px 4px #fbc2eb;
+}
+
+.reservadehoras_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.reservadehoras_form form {
+    border-radius: 20px 0px;
+    box-shadow: 0 0 13px rgb(203, 192, 192);
+    background-color: #fcffd0;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    padding: 10px;
+    width: auto;
+    height: auto;
+
+}
+.guardarReserva{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guardarReserva input {
+    width: 200px;
+    color: white;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-family: 'Kaushan Script',cursive;
+    font-weight: 100;
+    font-size: 20px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.reservadehoras_form label {
+    margin: 10px;
+}
+.reservadehoras_form input, select{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 30px;
+    border: transparent;
+    width: 250px;
+}
+
+/* Page - Reservar horas Aside  */
+
+.reservasInfo_aside {
+    display: flex;
+    justify-content: center;
+    background-color: #a18cd1;
+    border-radius: 20px 0px;
+    box-shadow: 0 0 13px rgb(184, 184, 184);
+    background-image: linear-gradient(to top right, #ffcaca 0%, #e460ee 100%);
+    height: 350px;
+    width: auto;
+    color: white;
+}
+.parrafo p, span{
+    padding: 10px;
+}
+
+/*Page - Sucursales*/
+.direccioness{
+    padding: 30px;
+}
+.formnc{
+    width: 80px;
+}
+#formcenter{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.sucursales{
+    margin-top: 20px;
+    
+}
+.imgsucursal {
+    margin: 10px 0px;
+    border-radius: 20px;
+    height: 150px;
+}
+
+/*Page - Sucursales/Form*/
+
+.contactoCointener{
+
+    width: 660px;
+}
+.formContactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContactanos form {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px 0px;
+    box-shadow: 0 0 13px rgb(203, 192, 192);
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    padding: 10px;
+    width: auto;
+    height: auto;
+
+}
+.formContactanos label, input, textArea {
+    margin: 5px 0px;
+}
+.formContactanos input{
+    margin-top: 10px;
+    border: transparent;
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 30px;
+    width: 250px;
+}
+#comentariosForm {
+    resize: none;
+    margin-top: 10px;
+    border: transparent;
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 45px;
+    width: 250px;
+}
+.btnEnviarDuda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.btnEnviarDuda button {
+    width: 200px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: white;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-family: 'Kaushan Script',cursive;
+    font-weight: 100;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 10px;
+}
+/*Page - Productos*/
+.marcosl{
+    /* background-color: aqua; */
+    padding: 10px;
+    width: 620px;
+}
+.marcos_products_list{
+    /* background-color: black; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+.product{
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+}
+.marcoimg{
+    width: 180px;
+    border-radius: 10px;
+
+}
+.precioh3{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+}
+/* Page index - Aside (Articulos)*/
+.contenedoraside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.articulos{
+    margin: 10px 0px;
+}
+.article{
+    align-items: left;
+    /* background-color:antiquewhite; */
+    background-image: linear-gradient(to right, #ffecd2 0%, #ffc2ae 100%);
+    border-radius: 0px 25px;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 13px rgb(205, 205, 194);
+}
+.h4articulo{
+    text-align: center;
+}
+.parrafoarticulo{
+    margin-top: 10px;
+}
+.parrafos {
+    text-align: justify;
+}
+.footerArticle {
+    margin-top: 5px;
+    text-align: center;
+}
+.fuenteArticulo{
+    font-size: 10px;
+    text-decoration: underline;
+}
+.content_figure{
+    justify-content: center;
+    margin: 10px 0px;
+}
+.imagenfigure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgarticulo{
+    height: 70px;
+    border-radius: 10px;
+}
+/*Page productos - Aside*/
+
+.promos_barra_lateral{
+    align-items: left;
+    border-radius: 25px;
+    width: 220px;
+    height: 750px;
+    padding: 10px;
+    margin-top: 35px;
+    box-shadow: 0 0 13px rgb(205, 205, 194);
+    background-image: linear-gradient(to top right, #ffcaca 0%, #e460ee 100%);
+}
+
+.promo_aside{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.promo_asides {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 10px;
+    margin: 30px 0px;
+    border-radius: 10px 0px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.promo_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ofertaimg{
+    height: 170px;
+}
+
+/*Contenedor del section y aside general*/
+#contenidopag {
+    width: 960px;
+    margin: 15px auto;
+    display: flex;
+}
+
+/*Section general*/
+.seccion {
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 660px;
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+/*aside*/
+
+#colum {
+    align-items: center;
+    margin: 20px 0px;
+    padding:20px;
+    float: left;
+    width: 220px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+/*Pie de pagina*/
+#pie {
+    width: 100%;
+}
+.h4servicios{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#cointenerpie{
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #ffa9c2 0%, #fee140 100%);
+    justify-content: center;
+    padding: 50px 0px;
+    box-shadow: 0 0 20px #aaaaaa;
+}
+#servicios{
+    height: 130px;
+    float: left;
+    padding: 10px;
+    border-radius: 0px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#servicios li {
+    margin: 5px 0px;
+    list-style-type: none;
+}
+#servicios ul {
+    margin-left: 20px;
+}
+#contactos li {
+    margin: 5px 0px;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+#contactos ul {
+    margin-left: 20px;
+}
+
+#contactos {
+    height: 130px;
+    margin: 0px 100px;
+    padding: 10px;
+    float: center;
+    border-radius: 0px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.phone_icon {
+    margin-right: 10px;
+    margin-left: 2px;
+    height: 12px;
+}
+#sigenos {
+    height: 130px;
+    float: right;
+    width: 70px;
+    padding: 10px;
+    border-radius: 0px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.icons_media{
+    width: 30px;
+    background-color: white;
+    border-radius: 9px;
+    border: 1px solid ;
+}
+#iconssocial{
+    margin-top: 10px;
+}
+#derechosreservados {
+    background: linear-gradient(to right, #fffc2f 0%, #ffff9e 50%);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+    clear: both;
+}
+
+/*Page sustentabilidad*/
+#lista {
+    padding-left: 20px;
+}
+#imgreciclaje{
+    height: 210px;
+    border-radius: 100px;
+}
+#gafassus {
+    height: 300px; 
+    border-radius: 10px;
+}
+#centrarimg{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Page - Lentes de contacto */
+
+.lentesdecontacto_form p {
+    margin: 10px 0px;
+}
+
+.h2Title_sectionc h2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+    font-family: 'Poppins', Arial;
+    text-shadow: 2px 5px 4px #a18cd1, -2px -2px 4px #fbc2eb;
+}
+.Caja_air_optix_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Caja_air_optix_img img {
+    padding: 30px 0px;
+    width: 500px;
+    height: auto;
+}
+.product_container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 660px;
+    margin: 20px 0px;
+}
+.ingresarG_Text {
+    margin-left: 120px;
+}
+.container_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 660px;
+}
+.product_box {
+    margin: 20px 0px;
+    padding: 10px;
+    text-align: center;
+}
+.product_box select {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.container_calcular {
+    display: flex;
+    width: 229px;
+    justify-content: center;
+    align-items: center;
+}
+.calcular_box {
+    display: flex;
+    margin: 10px 0px;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+.total_text {
+    color: rgb(158, 158, 158);
+    font-size: 20px;
+    font-weight: 100;
+    padding: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.total_calculado span {
+    color: rgb(0, 0, 91);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.total_calculado {
+    padding: 5px 0px;
+    font-size: 10px;
+}
+#cantidadP {
+    color: rgb(22, 149, 26);
+}
+.btnComprar button {
+    width: 100px;
+    height: auto;
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-family: 'Kaushan Script',cursive;
+    font-weight: 100;
+    font-size: 15px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+#img_lentedecontacto {
+    width: 200px;
+    margin: 10px;
+}
+
+.lentesCInfo_aside {
+    display: flex;
+    justify-content: center;
+    background-color: #a18cd1;
+    border-radius: 20px 0px;
+    box-shadow: 0 0 13px rgb(184, 184, 184);
+    background-image: linear-gradient(to top right, #ffcaca 0%, #e460ee 100%);
+    height: auto;
+    width: auto;
+    color: white;
+}

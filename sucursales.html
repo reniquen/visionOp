@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Daniel Quintana, Rafael González">
+    <link rel="stylesheet" href="estilos.css".css">
+    <title>Visión Óptima - Sucursales</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // Función para inicializar el mapa de Google Maps
+        function initMap() {
+            var locations = [
+                ['Sucursal 1', -33.4372, -70.6506],
+                ['Sucursal 2', -33.4564, -70.6485],
+                ['Sucursal 3', -33.4127, -70.5703],
+                ['Sucursal 4', -33.4278, -70.6250]
+            ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: {lat: -33.4372, lng: -70.6506} // Santiago de Chile
+            });
+
+            for (var i = 0; i < locations.length; i++) {
+                var marker = new google.maps.Marker({
+                    position: {lat: locations[i][1], lng: locations[i][2]},
+                    map: map,
+                    title: locations[i][0]
+                });
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhHzL9qkvq145UmCXdA2fp_RVfPO4S5NY&callback=initMap" async defer></script>
+</head>
+<body>
+    <div id="page">
+        <header class="cabecera">
+            <div id="cabecerah1">
+                <h1>Sucursales</h1>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <div>
+                <img src="imgs/Logo.png" id="logovision">
+            </div>
+            <div>
+                <h1 id="logonombre">Visión Óptima</h1>
+            </div>
+            <div class="navm">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservadehoras.html">Reserva de Horas</a></li>
+                    <li><a href="lentesdecontacto.html">Lentes de Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+            </div>
+            <div id="searchmenu">
+                <input type="text" id="serchbox">
+                <img src="iconos/lupa.png" id="serchlup">
+            </div>
+        </nav>
+
+        <div id="contenidopag">
+            <section class="seccion">
+                <div id="map"></div>
+                <div class="direccioness">
+                    <div class="h2Title_section">
+                        <h2>- Direccion de Sucursales-</h2>
+                    </div>
+                    <ul>
+                        <li>Sucursal 1 - Lincoyan berrios, coquimbo #702</li>
+                        <li>Sucursal 2 - Plaza de armas, #1829</li>
+                        <li>Sucursal 3 - Bellavista #1403</li>
+                        <li>Sucursal 4 - La Capitana #0304</li>
+                    </ul>
+                </div>
+                <div class="contactoCointener">
+                    <div class="h2Title_section">
+                        <h2>Contacto</h2>
+                    </div>
+                    <div class="formContactanos">
+                        <form action="/f/contactanos.php" method="post">
+                            <table>
+                              <tr>
+                                <td><label for="nombre">Nombre:</label></td>
+                                <td><input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required></td>
+                              </tr>
+                              <tr>
+                                <td><label for="apellido">Apellido:</label></td>
+                                <td><input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required></td>
+                              </tr>
+                              <tr>
+                                <td><label for="correo">Correo electrónico:</label></td>
+                                <td><input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required></td>
+                              </tr>
+                              <tr>
+                                <td><label for="asunto">Asunto:</label></td>
+                                <td><input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto" required></td>
+                              </tr>
+                              <tr>
+                                <td><label for="comentarios">Comentarios:</label></td>
+                                <td><textarea id="comentariosForm" name="comentarios" placeholder="Ingrese sus comentarios" required></textarea></td>
+                              </tr>
+                            </table>
+                            <div class="btnEnviarDuda">
+                                <button type="submit" name="btnEnviarDuda">Enviar</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </section>
+            
+            <aside id="colum">
+                <h1 class="asideh1">Sucursales</h1>
+                <div class="contenedoraside">
+                    <div class="sucursales">
+                        <div class="sucursal">
+                            <header>
+                                <h4 class="h4articulo">Sucursal 1</h1>
+                            </header>
+                            <div class="promo_imagen">
+                                <img src="imgs/sucursal 1.jpeg" alt="" class="imgsucursal">
+                            </div>
+                        </div>
+                        <div class="sucursal">
+                            <header>
+                                <h4 class="h4articulo">Sucursal 2</h1>
+                            </header>
+                            <div class="promo_imagen">
+                                <img src="imgs/sucursal2.jpeg" alt="" class="imgsucursal">
+                            </div>
+                        </div>
+                        <div class="sucursal">
+                            <header>
+                                <h4 class="h4articulo">Sucursal 3</h1>
+                            </header>
+                            <div class="promo_imagen">
+                                <img src="imgs/sucursal3.jpeg" alt="" class="imgsucursal">
+                            </div>
+                        </div>
+                        <div class="sucursal">
+                            <header>
+                                <h4 class="h4articulo">Sucursal 4</h1>
+                            </header>
+                            <div class="promo_imagen">
+                                <img src="imgs/Sucursal4.jpeg" alt="" class="imgsucursal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <footer id="pie">
+            <div id="cointenerpie">
+                <div id="servicios">
+                    <h4 class="h4servicios">SERVICIOS</h4>
+                    <ul>
+                        <li>Venta de lentes y marcos con garantía.</li>
+                        <li>Convenios con otras empresas.</li>
+                        <li>Opción de reciclaje de marcos de lentes.</li>
+                        <li>Reserva de horas con nuestros profesionales.</li>
+                        <li>Procedimientos oftalmológicos.</li>
+                    </ul>
+                </div>
+                <div id="contactos">
+                    <h4 class="h4servicios">CONTACTOS</h4>
+                    <ul>
+                        <li>Clinica Lincoya     <span class="whatsapp"><img src="iconos/llamada.png" alt="" class="phone_icon"></span>+569 123456789</li>
+                        <li>Clinica Beridicos   <span class="whatsapp"><img src="iconos/llamada.png" alt="" class="phone_icon"></span>+569 987654321</li>
+                        <li>Clinica Bellavista  <span class="whatsapp"><img src="iconos/llamada.png" alt="" class="phone_icon"></span>+569 456789123</li>
+                        <li>Clinica Capitana    <span class="whatsapp"><img src="iconos/llamada.png" alt="" class="phone_icon"></span>+569 987654321</li>
+                    </ul>
+                </div>
+                <div id="sigenos">
+                    <h4 class="h4servicios">SIGENOS</h4>
+                    <div id="iconssocial">
+                        <img src="iconos/whatsapp.png" alt="" class="icons_media">
+                        <img src="iconos/instagram.png" alt="" class="icons_media">
+                        <img src="iconos/twitter.png" alt="" class="icons_media">
+                        <img src="iconos/facebook.png" alt="" class="icons_media">
+                    </div>
+                </div>
+            </div>
+            <div id="derechosreservados"><p>Derechos reservados © 2023 Tu Clínica Oftalmológica</p></div>
+        </footer>
+    </div>
+</body>
+</html>
